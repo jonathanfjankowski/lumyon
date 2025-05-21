@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lumyon ERP - Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <h1>Lumyon ERP</h1>
+    <button class="new-sale"><i class="ph ph-plus"></i><span>Nova Venda</span></button>
+    <a href="#" class="nav-button"><i class="ph ph-gauge"></i><span>Dashboard</span></a>
+    <a href="#" class="nav-button"><i class="ph ph-list"></i><span>Cadastros</span></a>
+    <a href="#" class="nav-button"><i class="ph ph-package"></i><span>Produtos</span></a>
+    <a href="#" class="nav-button"><i class="ph ph-wrench"></i><span>Serviços</span></a>
+    <a href="#" class="nav-button"><i class="ph ph-file"></i><span>Orçamentos</span></a>
+    <a href="#" class="nav-button"><i class="ph ph-clipboard"></i><span>Ordens de Serviços</span></a>
+    <a href="#" class="nav-button"><i class="ph ph-shopping-cart"></i><span>Vendas</span></a>
+    <a href="#" class="nav-button"><i class="ph ph-warehouse"></i><span>Estoque</span></a>
+    <a href="#" class="nav-button"><i class="ph ph-bank"></i><span>Financeiro</span></a>
+    <a href="#" class="nav-button"><i class="ph ph-file-text"></i><span>Notas Fiscais</span></a>
+    <a href="#" class="nav-button"><i class="ph ph-briefcase"></i><span>Contratos</span></a>
+    <a href="#" class="nav-button"><i class="ph ph-headset"></i><span>Atendimentos</span></a>
+    <a href="#" class="nav-button"><i class="ph ph-calendar"></i><span>Agenda</span></a>
+    <a href="#" class="nav-button"><i class="ph ph-file-text"></i><span>Relatórios</span></a>
+    <a href="#" class="nav-button"><i class="ph ph-gear"></i><span>Configurações</span></a>
+    <button class="toggle-button" onclick="toggleSidebar()">&lt;</button>
+  </div>
+
+  <div class="content">
+    <h2>Dashboard Financeira</h2>
+    <div class="dashboard-cards">
+      <div class="card green">
+        <h3>A receber hoje</h3>
+        <p>R$ 0,00</p>
+      </div>
+      <div class="card red">
+        <h3>A pagar hoje</h3>
+        <p>R$ 0,00</p>
+      </div>
+      <div class="card blue">
+        <h3>Recebimentos do mês</h3>
+        <p>0% - R$ 0,00</p>
+      </div>
+      <div class="card blue">
+        <h3>Pagamentos do mês</h3>
+        <p>0% - R$ 0,00</p>
+      </div>
+    </div>
+    <div class="charts">
+      <div class="chart">
+        <h4>Fluxo de Caixa</h4>
+        <div class="chart-placeholder">Gráfico aqui</div>
+      </div>
+      <div class="chart">
+        <h4>Gráfico de Vendas</h4>
+        <div class="chart-placeholder">Gráfico aqui</div>
+      </div>
+    </div>
+    <div class="charts">
+      <div class="bank-accounts">
+        <h4>Contas Bancárias</h4>
+        <div class="chart-placeholder">Gráfico/Saldos</div>
+      </div>
+      <div class="calendar">
+        <h4>Calendário</h4>
+        <table class="calendar-table">
+          <thead>
+            <tr><th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sáb</th></tr>
+          </thead>
+          <tbody>
+            <tr><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+            <tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr>
+            <tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr>
+            <tr><td>20</td><td>21</td><td>22</td><td class="today">23</td><td>24</td><td>25</td><td>26</td></tr>
+            <tr><td>27</td><td>28</td><td>29</td><td>30</td><td></td><td></td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
